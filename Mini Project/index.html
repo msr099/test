@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="index_js.js"></script>
+    <link rel="stylesheet" href="index_css.css">
+  <title>Vasavi e-Corner</title>
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="images/logo.jpg" alt="Logo">
+  </header>
+
+  <nav id="nav1" class="navbar navbar-collapse navbar-light sticky-top navbar-expand-lg">
+    <a class="navbar-brand" href="#" style="color: #1d3557; font-weight: 650;">Vasavi e-Corner</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#aboutus">About Us</a>
+        <a class="nav-item nav-link" href="login.html">Sign in</a>
+        <a class="nav-item nav-link" href="signup.html">Sign up</a>
+        <a class="nav-item nav-link" href="#contactus">Contact Us</a>
+
+      </div>
+    </div>
+
+  </nav>
+
+    <div id="canteencontainer" class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <!-- <img class="img-fluid" id="canteen" src="images/Canteen.jpg" alt="Canteen"> -->
+
+          <div id="canteencarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/cafe1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/cafe2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/cafe3.jpg" alt="Third slide">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <section id="canteeninfo">
+            <h3 style="text-align: right; color: #e63946;">Cafeteria</h3>
+            <p>Our college cafeteria provides us with a wide variety of beverages and dishes. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente voluptates qui vitae laudantium velit similique aliquid at facilis dolore!</p>
+            <center><button type="button" class="btn btn-outline-danger" onclick="clickEvent1()">Click Here!</button></center>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div id="stationerycontainer" class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <section id="stationeryinfo">
+            <h3 style="text-align: left; color: #1d3557;">Stationery</h3>
+            <p>Our college stationery provides us with various services. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sapiente voluptates qui vitae laudantium velit similique aliquid at facilis dolore!</p>
+            <center><button type="button" class="btn btn-outline-primary" onclick="clickEvent2()">Click Here!</button></center>
+          </section>
+        </div>
+        <div class="col-md-6">
+          <!-- <img class="img-fluid" id="stationery" src="images/Stationery.jpg" alt="Stationery"> -->
+          <div id="stationerycarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/stat1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/stat2.jpg" alt="Second slide">
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="aboutus">
+      <h2 >About Us</h2>
+      <p>
+        Vasavi e-Corner is a web application for students of Vasavi college of engineering. This application enables users to access various facilities offered by the college through an online portal reducing the burden for students as well as for management. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ea beatae assumenda, voluptatem eos facere aperiam tempore iste in fugit mollitia consequuntur eum. Deleniti alias nemo nobis eveniet in odio quas harum. Voluptates doloribus minus officiis nesciunt omnis, odit consectetur ea libero commodi distinctio suscipit facere praesentium laborum, maxime vitae.
+      </p>
+    </div>
+
+    <div id="contactus">
+      <h2 >Contact Us</h2>
+      <h5>Email : </h5>
+      <p>1602-18-733-096@vce.ac.in</p>
+      <p>1602-18-733-098@vce.ac.in</p>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>
